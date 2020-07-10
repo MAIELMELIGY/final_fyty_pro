@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{%block title%}تسجيل دخول{%endblock%}
+
+{% block stylesheet %}
+
+
+  <link rel="stylesheet" href="{% static 'css/form.css' %}">
+{% endblock %}
+{%block container-fluid%}
+
+{%endblock container-fluid%}
+{% block body %}
+        <div class="container-fluid p-0">
+            <div class="site-content" style="height: 93vh;">
+                <div class="bg-black-filter d-flex justify-content-center" style="height: 93vh;">
+                    <div class="d-flex flex-column">
+                    <div class="container underForm">
+                        <h2>تسجل الدخول</h2>
+
+                        <form class="regist col-md-5"  method="post" novalidate>
+                            {% csrf_token %}
+                            {% include 'includes/form.html' %}
+                            <button type="submit" class="button"  >Log in</button>
+                          
+                        
+                            
+                        </form>
+                        <div class="link-accont">
+                            <a href="form.html" class="makeAccont"> انشاء حساب جديد</a>
+                            <br>
+                            <a href="conferm.html" class="forget"> هل نسيت كلمه السر؟</a>
+                            <div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        {% endblock %}

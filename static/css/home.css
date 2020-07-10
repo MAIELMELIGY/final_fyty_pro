@@ -1,0 +1,208 @@
+
+/*header*/
+.site-content{
+    background-image: url(../imgs/home_bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+}
+.bg-black-filter{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 90vh;
+}
+.site-title{
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 70px;
+    margin: 20% 10%;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+/*home sections*/
+.section{
+    padding: 3% 0%;
+}
+
+/*section 1*/
+.section-title{
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    word-spacing: 5px;
+}
+.component{
+    display: inline-block;
+    border: none;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0px -2px;
+    padding: 20px 10px;
+}
+.component a img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    transition: .3s;
+}
+.component a img:hover {
+    filter: blur(1.5px) brightness(60%);
+    box-shadow: 0 0 5px white;
+}
+.component a :not(img){
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    text-align: center;
+    color: #f5f5f5;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+.component a:hover :not(img){
+    opacity: 1;
+}
+.service:hover{
+    color: rgba(0,0,0,0.9);
+}
+
+/*section 2*/
+.sec2{
+    background-color: rgb(56, 149, 216);
+}
+.sec2-card{
+    background-color: #FFFFFF;
+    height: 500px;
+    display: inline-block;
+    margin: 4% auto;
+    border: 1.5px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2.5px rgba(100%, 100%, 100%, 0.7);
+}
+.sec2-card .title{
+    padding: 30px;
+    text-align: right;
+    color:rgba(0, 0, 0, 0.8);
+}
+.sec2-card .sec2-card-img{
+    margin: 0;
+    padding: 0;
+    height: 58%;
+}
+.sec2-card-img a img {
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+.sec2-card .add, .sec2-card .all{
+    background-color: #FFFFFF;
+    width: 40%;
+    height: 45px;
+    color: rgb(27, 177, 107);
+    border: 1px solid rgb(27, 177, 107);
+    box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 30px 4.7%;
+}
+.sec2-card .all{
+    border: 1px solid #3581B8;
+    color: #3581B8;
+}
+.sec2-card .add:hover{
+    background-color: rgb(27, 177, 107);
+    color: whitesmoke;
+    transition: 0.3s;
+}.sec2-card .all:hover{
+    background-color: #3581B8;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+/*section 3*/
+.section .container-fluid {
+    background-image: url(../imgs/home_section3_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-white-filter{
+    background-color: rgba(100%, 100%, 100%, 0.7);
+    padding: 8% 0%;
+}
+.section .heading {
+    width: 80%;
+    margin-top: 15%;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    color: rgba(0, 0, 0, 0.8);
+}
+.section .section-paragraph{
+    width: 80%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 8%;
+    margin-left: 8%;
+}
+.section .btn{
+    margin-bottom: 10%;
+    width: 30%;
+    padding: 2% 5%;
+    background-color: #3581B8;
+    color: whitesmoke;
+    transition: all 150ms ease-in;
+    border: none;
+    margin-left: 8%;
+}
+.section .btn:hover{
+    background-color: rgb(10, 92, 150);
+}
+
+/*section 4*/
+.sec4{
+    display: flex;
+    background-color: #ececec;
+}
+.sec4 .container .col-md-5,.sec4 .container .col-md-6{
+    display: inline-block;
+}
+.sec4-img{
+    height: 450px;
+    background-image: url(../imgs/helping.png);
+    background-position: center ;
+    background-size: cover;
+    float: right;
+    border-radius: 8px;
+}
+
+/*section 5*/
+.one-sponsor-bg {
+    display : inline-block; 
+    height: 140px;
+    margin: 5% 4%;
+    background: none;
+}
+.sponsor-logo {
+    width: 72%;
+    height: 58%;
+    margin: 14%;
+}
+@media (min-width: 0px) and (max-width: 767px)
+{
+    .one-sponsor-bg{
+        margin: 5% 0%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px)
+{
+    .one-sponsor-bg{
+        margin: 5% 3.5%;
+    }
+}

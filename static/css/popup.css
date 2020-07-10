@@ -1,0 +1,105 @@
+.content{
+  /*
+  opacity: 0;
+  visibility: hidden;
+  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 350px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+  transition: .4s ease-in;
+}
+
+#click:checked ~.content{
+  opacity: 1;
+  visibility: visible;
+}
+.header{
+  height: 60px;
+  background: #3581B8;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .4);
+}
+.header .title{
+  color: rgb(255, 255, 255);
+  float: right;
+  font-size: 25px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.fa-times{
+ padding-left: 20px;
+ padding-top: 20px;
+ font-size: 20px;
+ color: rgb(255, 255, 255);
+ cursor: pointer;
+}
+.modal-body{
+  background: rgb(255, 255, 255);
+}
+.content-comment{
+  width: 100%;
+  overflow-y: auto;
+}
+.sub-comment{
+  height: auto;
+  margin-top: 10px;
+  width: 100%;
+  background-color:#3581B8 ;
+  border-radius: 10px;
+}
+.sub-comment h3{
+  color: white;
+  float: right;
+  padding-right: 10px;
+  padding-top: 7px;
+}
+.sub-comment p{
+  color: white;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+.make-comment{
+  height: 50px;
+  background: #3581B8;
+  overflow: hidden;
+  margin: 0;
+  margin-top: 69px;
+  border-radius:  0 0 5px 5px;
+ 
+}
+.f{
+  display: inline-block;
+  width: 70%;
+  height: 50px;
+  float: left;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 10px;
+  border: none; 
+}
+.xxa{
+  display: inline-block;
+  height: 50px;
+  width: 30%;
+  text-align: center;
+  background-color:#3d3d3f;
+  color: white;
+  float: right;
+  border-radius:  0 0 5px 0;
+  
+}
+.xxa:hover{
+  transition: .25s;
+  background-color: #5f5f5f;
+  cursor: pointer;
+  color: white;
+}

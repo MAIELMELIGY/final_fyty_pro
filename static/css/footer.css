@@ -1,0 +1,31 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Cairo:700|Roboto:700&display=swap');
+
+footer{
+    height: 200px;
+    background-color: #2E2E2E;
+}
+.footer-slid{
+    display: inline;
+    text-align: center;
+}
+.social-container{
+    text-align: center;
+    padding-top: 45px;
+}
+.social-logo{
+    color: #FBFBFB;
+    padding-left: 8px;
+    font-size: 18px;
+}
+.copy-right{
+    color: #FBFBFB;
+    font-size: 14px;
+    font-family: arial;
+    padding-top: 10px;
+}
+.footer-link{
+    font-size: 15px;
+    color: #FBFBFB;
+    padding-left: 10px;
+}

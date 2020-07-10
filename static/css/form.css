@@ -1,0 +1,105 @@
+body{
+    overflow: hidden;
+}
+.d-flex {
+    width: 100%;
+}
+.underForm{
+    background-color: rgba(255, 255, 255, .7);
+    margin: auto;
+    border-radius: 10px;
+}
+.regist{
+    background-color: #f5f5f5;
+    padding: 3% 0%;
+    margin: 1.5% 1% ;
+    border-radius: 10px;
+}
+.regist h2{
+    text-align: center;
+    font-family:cairo;
+    margin: 10%;
+    color: rgba(0, 0, 0, .7);
+}
+input{
+    width: 80%;
+    height: 30px;
+    background: none;
+    margin:1px auto;
+    display: block;
+    font-size: 15px;
+    border:none;
+    padding: 1px;
+    text-align: right;
+    outline: none; 
+    transition:0.25s;
+    color: rgba(0,0,0,0.7);
+}
+input:focus{
+    width: 85%;
+    border-color: #3d3d3f;
+}
+hr{
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 12%;
+    background-color: rgba(0, 0, 0, .2);
+}
+select{
+    width: 80%;
+    height: 30px;
+    background: none;
+    margin:1px auto;
+    display: block;
+    font-size: 15px;
+    border:none;
+    padding: 1px;
+    text-align: right;
+    outline: none; 
+    transition:0.25s;
+    color: rgba(0,0,0,0.7);
+}
+select option{
+    text-align: right;
+    background: none;
+    color: rgba(0,0,0,0.7);
+}
+.button{
+    width: 40%;
+    height: 50px;
+    background-color: #3d3d3f;
+    display: block;
+    font-size: 15px;
+    border:none;
+    margin: auto;
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+    color: #f5f5f5;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.button:focus {
+    width: 35%;
+    border-color: #1babab;
+}
+.button:hover{
+    transition: .25s;
+    background-color: #25dede;
+    cursor: pointer;
+    color: white;
+}
+.button:active{
+    transform: scale(.91);
+}
+.makeAccont{
+    left:50%;
+    transform: translateX(40%);
+}
+.forget{
+    text-align: center;
+}
+.link-accont{
+    width: 100%;
+    text-align: center;
+}

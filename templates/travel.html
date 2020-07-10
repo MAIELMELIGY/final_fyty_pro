@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{%block title%} الرحلات{%endblock%}
+
+  
+    {% block stylesheet %}
+    
+   
+    <link rel="stylesheet" href="{%static 'css/start-button.css'%}">
+    <link rel="stylesheet" href="{% static 'css/contest-travel.css'%}">
+
+    {% endblock %}
+
+    {%block container%}
+    <div class="events container" id="section08">
+        {%for trip in trips%}
+        <div class="events-cell col-md-5">
+            <div class="event-date">
+                <div class="event-day">
+                    <p class="day">{{trip.date}}</p>
+                    <hr class="date-div">
+                </div>
+               
+                <p class="month">{{trip.date}}</p>
+            </div>
+            <p class="event-title">{{trip.place}}</p>
+            <i class="fas fa-clock clc" title="وقت الصعود"> </i>
+            <p class="event-time">الساعة {{trip.time}}</p>
+            <i class="fas fa-chart-line prd" title="مدة الرحلة"></i>
+            <p class="event-period">{{trip.days_lenght}}</p>
+            <i class="fas fa-map-marker-alt loc" title="مكان التجمع"></i>
+            <p class="event-loc">امام البوابة الرئيسية لجامعة كفر الشيخ </p>
+            <p class="price">{{trip.price}} LE</p>
+            <input type="button" value="احجز مكانك" class="event-button">
+        </div>
+        {%endfor%}
+        <div class="events-cell col-md-5">
+            <img class="event-photo" src= "{% static 'imgs/img.jpeg' %}">
+            <div class="event-date">
+                <div class="event-day">
+                    <p class="day">5</p>
+                    <hr class="date-div">
+                </div>
+                <p class="month">NOV</p>
+            </div>
+            <p class="event-title">اسم الرحلة</p>
+            <i class="fas fa-clock clc" title="وقت الصعود"></i>
+            <p class="event-time">الساعة 4:30 م</p>
+            <i class="fas fa-chart-line prd" title="مدة الرحلة"></i>
+            <p class="event-period">لمدة 3 أيام</p>
+            <i class="fas fa-map-marker-alt loc" title="مكان التجمع"></i>
+            <p class="event-loc">امام البوابة الرئيسية لجامعة كفر الشيخ </p>
+            <p class="price">150 LE</p>
+            <input type="button" value="احجز مكانك" class="event-button">
+        </div><div class="events-cell col-md-5">
+            <img class="event-photo" src= "{% static 'imgs/img.jpeg' %}">
+            <div class="event-date">
+                <div class="event-day">
+                    <p class="day">5</p>
+                    <hr class="date-div">
+                </div>
+                <p class="month">NOV</p>
+            </div>
+            <p class="event-title">اسم الرحلة</p>
+            <i class="fas fa-clock clc" title="وقت الصعود"></i>
+            <p class="event-time">الساعة 4:30 م</p>
+            <i class="fas fa-chart-line prd" title="مدة الرحلة"></i>
+            <p class="event-period">لمدة 3 أيام</p>
+            <i class="fas fa-map-marker-alt loc" title="مكان التجمع"></i>
+            <p class="event-loc">امام البوابة الرئيسية لجامعة كفر الشيخ </p>
+            <p class="price">150 LE</p>
+            <input type="button" value="احجز مكانك" class="event-button">
+        </div><div class="events-cell col-md-5">
+            <img class="event-photo" src= "{% static 'imgs/img.jpeg' %}">
+            <div class="event-date">
+                <div class="event-day">
+                    <p class="day">5</p>
+                    <hr class="date-div">
+                </div>
+                <p class="month">NOV</p>
+            </div>
+            <p class="event-title">اسم الرحلة</p>
+            <i class="fas fa-clock clc" title="وقت الصعود"></i>
+            <p class="event-time">الساعة 4:30 م</p>
+            <i class="fas fa-chart-line prd" title="مدة الرحلة"></i>
+            <p class="event-period">لمدة 3 أيام</p>
+            <i class="fas fa-map-marker-alt loc" title="مكان التجمع"></i>
+            <p class="event-loc">امام البوابة الرئيسية لجامعة كفر الشيخ </p>
+            <p class="price">150 LE</p>
+            <input type="button" value="احجز مكانك" class="event-button">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+    

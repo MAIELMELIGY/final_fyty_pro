@@ -1,0 +1,10 @@
+{% load static%}
+{%for board in boards.all%}
+       
+            {{board.name}}
+         
+            {{board.instructor}}
+    
+            {{board.link}}
+            {{board.description}}
+{% endfor %}
