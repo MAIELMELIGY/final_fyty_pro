@@ -47,7 +47,6 @@
 
     <main id="section08">
         <div class="container">
-            
             <!--section 1-->
             <div class="section">
                 <div style="margin: auto;">
@@ -80,7 +79,7 @@
                 <div class="sec2-card col-md-5" style="float:left;">
                     <h3 class="title">الرحلات</h3>
                     <div class="sec2-card-img">
-                        <a href="#"><img src="imgs/traveling.png"></a>
+                        <a href="#"><img src="{% static 'imgs/traveling.png' %}"></a>
                     </div>
                     <input type="button" value="اضافة رحلة" class="add">
                     <input type="button" value="جميع الرحلات" class="all">
@@ -88,7 +87,7 @@
                 <div class="sec2-card col-md-5" style="float: right;">
                     <h3 class="title">المسابقات</h3>
                     <div class="sec2-card-img">
-                        <a href="#"><img src="imgs/contest.png"></a>
+                        <a href="#"><img src="{% static 'imgs/contest.png' %}"></a>
                     </div>
                     <input type="button" value="اضافة مسابقة" class="add">
                     <input type="button" value="جميع المسابقات" class="all">
@@ -125,31 +124,14 @@
         <div class="section" style="background-color: none;">
             <div class="container">
                 <p class="section-title" style="color: #2E2E2E;">هذا الموقع برعاية</p>         
-                <div class="one-sponsor-bg col-md-3"><img class="sponsor-logo" src="imgs/Bloomberg_News_logo.png"></div>
-                <div class="one-sponsor-bg col-md-3"><img class="sponsor-logo" src="imgs/microsoft_PNG4.png"></div>
-                <div class="one-sponsor-bg col-md-3"><img class="sponsor-logo" src="imgs/Comcast-Logo.png"></div>
+                <div class="one-sponsor-bg col-md-3"><img class="sponsor-logo" src="{% static 'imgs/Bloomberg_News_logo.png'%}"></div>
+                <div class="one-sponsor-bg col-md-3"><img class="sponsor-logo" src="{% static 'imgs/microsoft_PNG4.png'%}"></div>
+                <div class="one-sponsor-bg col-md-3"><img class="sponsor-logo" src="{% static 'imgs/Comcast-Logo.png'%}"></div>
             </div>
         </div>
     </main>
-       
-    <!--footer-->
-    <footer>
-        <div class="footer-slid">
-            <div class="social-container">
-            <a href="#" class="social-logo"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-logo"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-logo"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="copy-right">&copy; Copywrites &#124; true_team FyTy 2019 - 2020</p>
-            <div class="">
-                    <a href="#" class="footer-link">الرئيسية</a>
-                    <a href="#" class="footer-link">جامعى</a>
-                    <a href="#" class="footer-link">ثانوى</a>
-                    <a href="#" class="footer-link">فرص عمل</a>
-                    <a href="#" class="footer-link">دورات و تدريبات</a>
-            </div>
-        </div>
-    </footer>
+ 
+   
 
     <!--scripts-->
 
@@ -159,7 +141,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
     <!--scroll-->
-    <script src="js/scroll.js"></script>
+
     {%endblock container%}
 </body>
 </html>

@@ -60,3 +60,6 @@ def add_job(request):
         form = JobForm()
 
     return render(request,'job_upload.html',{'form':form})
+
+
+        

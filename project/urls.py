@@ -23,11 +23,11 @@ urlpatterns = [
     #path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls',namespace='accounts')),
     path('home/', include('home.urls',namespace='home')),
-
     path('admin/', admin.site.urls),
     path('jobs/', include('job.urls',namespace='jobs')),
     path('courses/', include('courses.urls',namespace='courses')),
     path('travels/', include('travel.urls',namespace='travel')),
+    path('collage/', include('collage.urls',namespace='collage')),
 
 
 ]
