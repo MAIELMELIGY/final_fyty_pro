@@ -32,32 +32,17 @@
          
           <p>.دور علي الشغل الي يناسبك</p>
         </div>
-        <form method="post" class="search-jobs-form">
+       
+        <form method="get" class="search-jobs-form">
           <div class="row mb-5">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <input type="text" class="form-control form-control-lg" placeholder="عنوان الوظيفه ">
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <select class="form-control">
-                <option>اي مكان</option>
-                <option>القاهره</option>
-                <option>الاسكندريه</option>
-                <option>البحيره</option>
-                <option>كفر الشيخ</option>
-              </select>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <select class="form-control">
-                <option>عمل جزئ</option>
-                <option>عمل كلي</option>
-                <option>عمل حر</option>
-              </select>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search"><span class="icon-search icon mr-2"></span>ابحث عن الوظيفه</button>
-            </div>
+          {{myFilter.form}}
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search"><span class="icon-search icon mr-2"></span>ابحث عن الوظيفه</button>
           </div>
-        </form>
+        </div>
+          </form>
+        
+       
       </div>
     </div>
   </div>

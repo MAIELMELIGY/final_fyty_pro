@@ -38,7 +38,7 @@ def image_upload(instance,filename):
 class Job(models.Model):
     owner = models.ForeignKey(User, related_name='job_owner', on_delete=models.CASCADE)
     Vacancy = models.IntegerField(default=1)
-    company_name=models.CharField( _("اسم الشركه :"),max_length=50,null=True)
+    company_name=models.CharField( _("اسم الشركه"),max_length=50,null=True)
     job_name=models.CharField(_("اسم الوظيفه"), max_length=254,null=True)
     address_country= models.CharField(_("الدوله "), max_length=50,null=True)
     address_city = models.CharField(_("المدينه"), max_length=50 , null=True)

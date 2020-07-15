@@ -23,7 +23,9 @@ class Post(models.Model):
     dep = models.ForeignKey(dep,related_name='posts',on_delete=models.CASCADE)
     #image_or_video = 
     created_by = models.ForeignKey(User,related_name='posts',on_delete=models.CASCADE)
-    created_dt = models.DateTimeField(auto_now_add=True)
+    created_at=models.DateTimeField(auto_now_add=True)
+    update_at=models.DateTimeField(auto_now=True)
+    slug = models.SlugField(unique=True)
     
     def __str__(self):
         truncted_message = Truncator(self.post_message)
@@ -33,7 +35,8 @@ class comment (models.Model):
     comment=models.TextField(max_length=4000)
     posts=models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     created_by = models.ForeignKey(User,related_name='comments',on_delete=models.CASCADE)
-
+    created_at=models.DateTimeField(auto_now_add=True)
+    update_at=models.DateTimeField(auto_now=True)
 
     def __str__(self):
         truncted_message = Truncator(self.comment)

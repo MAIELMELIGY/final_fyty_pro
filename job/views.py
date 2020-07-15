@@ -5,6 +5,7 @@ from .models import Job
 from django.core.paginator import Paginator
 from .form import ApplyForm,JobForm
 from django.urls import reverse
+from .filters import jobFilter
 # Create your views here.
 
 # Create your views here.
@@ -18,14 +19,15 @@ def choice(request):
 def job_list(request):
     job_list = Job.objects.all()
 
+    myFilter = jobFilter(request.GET, queryset=job_list)
+
+    job_list = myFilter.qs 
     paginator = Paginator(job_list, 15) 
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
+    context = {'jobs' :page_obj , 'myFilter':myFilter } # template name
 
-    context = {'jobs' :page_obj } # template name
     return render(request,'job_list.html',context)
-
-
 
 def job_detail(request , slug):
     job_detail = Job.objects.get(slug=slug)
